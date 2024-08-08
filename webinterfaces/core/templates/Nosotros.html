@@ -1,0 +1,610 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block link2 %}active{% endblock link2 %}
+{% block content %}
+
+<body>
+  <main id="main">
+    <section class="intro-single">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="title-single-box">
+              <h1 class="title-single">Transformamos tus sueños en realidad, creando espacios que inspiran tu vida.</h1>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#">Inicio</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Nosotros
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 position-relative">
+            <div class="about-img-box">
+              <img src="{% static 'img/slide-about-1.jpg' %}" alt="" class="img-fluid">
+            </div>
+            <div class="sinse-box">
+              <h3 class="sinse-title">Agencia Inmobiliaria
+                <span></span>
+                <br> Desde 2020
+              </h3>
+              <p>Arte y creatividad</p>
+            </div>
+          </div>
+          <div class="col-md-12 section-t8 position-relative">
+            <div class="row">
+              <div class="col-md-6 col-lg-5">
+                <img src="{% static 'img/about-2.jpg' %}" alt="" class="img-fluid">
+              </div>
+              <div class="col-lg-2  d-none d-lg-block position-relative">
+                <div class="title-vertical d-flex justify-content-start">
+                  <span>Propiedades exclusivas</span>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-5 section-md-t3">
+                <div class="title-box-d">
+                  <h3 class="title-d">Más <s></s>
+                    <span class="color-d">Sobre</span> Nuestra
+                    <br> Empresa
+                  </h3>
+                </div>
+                <p class="color-text-a">
+                  En el corazón de Portoviejo, Ecuador, nació en 2020 una empresa con una visión clara y un propósito
+                  profundo: Hogar Sueños. Fundada por María y Carlos Rodríguez,
+                  una pareja de emprendedores apasionados por la arquitectura y el diseño, la empresa surgió de la
+                  necesidad de brindar a las familias locales más que una casa, un verdadero
+                  hogar donde pudieran construir sus sueños.
+                </p>
+                <p class="color-text-a">
+                  Desde el principio, Hogar Sueños se distinguió por su compromiso con la calidad y la atención al
+                  detalle. Cada proyecto era diseñado pensando en la comodidad,
+                  la funcionalidad y la estética, sin perder de vista la sostenibilidad y el respeto por el medio
+                  ambiente. La empresa rápidamente se ganó la reputación de ser confiable y
+                  dedicada, y no pasó mucho tiempo antes de que comenzaran a recibir elogios y recomendaciones de sus
+                  primeros clientes satisfechos.
+                  Hoy, Hogar Sueños es un pilar en la comunidad de Portoviejo, un símbolo de integridad, compromiso y
+                  excelencia. Con cada nuevo proyecto, continúan cumpliendo su misión
+                  de transformar sueños en realidades tangibles, una casa a la vez.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-agents section-t8">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Nuestros Asesores Comerciales</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card-box-d">
+              <div class="card-img-d">
+                <img src="{% static 'img/agent-4.jpg' %}" alt="" class="img-d img-fluid">
+              </div>
+              <div class="card-overlay card-overlay-hover">
+                <div class="card-header-d">
+                  <div class="card-title-d align-self-center">
+                    <h3 class="title-d">
+                      <a href="{% url 'Asesor'%}" class="link-two">María López
+                        <br> </a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="card-body-d">
+                  <p class="content-d color-text-a">
+                    Experta en ventas con enfoque en relaciones duraderas.
+                  </p>
+                  <div class="info-agents color-a">
+                    <p>
+                      <strong>Telefono: </strong> +593 356 945234
+                    </p>
+                    <p>
+                      <strong>Correo Electronico: </strong> agents@example.com
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer-d">
+                  <div class="socials-footer d-flex justify-content-center">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-twitter" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-d">
+              <div class="card-img-d">
+                <img src="{% static 'img/agent-1.jpg' %}" alt="" class="img-d img-fluid">
+              </div>
+              <div class="card-overlay card-overlay-hover">
+                <div class="card-header-d">
+                  <div class="card-title-d align-self-center">
+                    <h3 class="title-d">
+                      <a href="{% url 'Asesor'%}" class="link-two">Lionel Messi
+                        <br> </a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="card-body-d">
+                  <p class="content-d color-text-a">
+                    Estratega en ventas comerciales, enfoque en negocios.
+                  </p>
+                  <div class="info-agents color-a">
+                    <p>
+                      <strong>Telefono: </strong> +593 356 945234
+                    </p>
+                    <p>
+                      <strong>Correo Electronico: </strong> agents@example.com
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer-d">
+                  <div class="socials-footer d-flex justify-content-center">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-twitter" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-d">
+              <div class="card-img-d">
+                <img src="{% static 'img/agent-5.jpg' %}" alt="" class="img-d img-fluid">
+              </div>
+              <div class="card-overlay card-overlay-hover">
+                <div class="card-header-d">
+                  <div class="card-title-d align-self-center">
+                    <h3 class="title-d">
+                      <a href="{% url 'Asesor'%}" class="link-two">Ana Rodríguez
+                        <br> </a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="card-body-d">
+                  <p class="content-d color-text-a">
+                    Especialista en propiedades residenciales, atención personalizada.
+                  </p>
+                  <div class="info-agents color-a">
+                    <p>
+                      <strong>Telefono: </strong> +593 356 945234
+                    </p>
+                    <p>
+                      <strong>Correo Electronico: </strong> agents@example.com
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer-d">
+                  <div class="socials-footer d-flex justify-content-center">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-twitter" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card-box-d">
+              <div class="card-img-d">
+                <img src="{% static 'img/agent-6.jpg' %}" alt="" class="img-d img-fluid">
+              </div>
+              <div class="card-overlay card-overlay-hover">
+                <div class="card-header-d">
+                  <div class="card-title-d align-self-center">
+                    <h3 class="title-d">
+                      <a href="{% url 'Asesor'%}" class="link-two">Cristiano Ronaldo
+                        <br></a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="card-body-d">
+                  <p class="content-d color-text-a">
+                    Asesor integral, soluciones innovadoras para clientes.
+                  </p>
+                  <div class="info-agents color-a">
+                    <p>
+                      <strong>Telefono: </strong> +593 356 945234
+                    </p>
+                    <p>
+                      <strong>Correo Electronico: </strong> agents@example.com
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer-d">
+                  <div class="socials-footer d-flex justify-content-center">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-twitter" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-d">
+              <div class="card-img-d">
+                <img src="{% static 'img/agent-7.jpg' %}" alt="" class="img-d img-fluid">
+              </div>
+              <div class="card-overlay card-overlay-hover">
+                <div class="card-header-d">
+                  <div class="card-title-d align-self-center">
+                    <h3 class="title-d">
+                      <a href="{% url 'Asesor'%}" class="link-two">Luisa Fernández
+                        <br> Miraflores</a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="card-body-d">
+                  <p class="content-d color-text-a">
+                    Profesional en ventas de lujo, atención a detalles.
+                  </p>
+                  <div class="info-agents color-a">
+                    <p>
+                      <strong>Telefono: </strong> +593 356 945234
+                    </p>
+                    <p>
+                      <strong>Correo Electronico: </strong> agents@example.com
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer-d">
+                  <div class="socials-footer d-flex justify-content-center">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-twitter" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-testimonials section-t8 nav-arrow-a">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Testimonios</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="testimonial-carousel" class="swiper">
+          <div class="swiper-wrapper">
+
+            <div class="carousel-item-a swiper-slide">
+              <div class="testimonials-box">
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <div class="testimonial-img">
+                      <img src="{% static 'img/testimonial-1.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <div class="testimonial-ico">
+                      <i class="bi bi-chat-quote-fill"></i>
+                    </div>
+                    <div class="testimonials-content">
+                      <p class="testimonial-text">
+                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                        rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
+                        semper.
+                      </p>
+                    </div>
+                    <div class="testimonial-author-box">
+                      <img src="{% static 'img/mini-testimonial-1.jpg' %}" alt="" class="testimonial-avatar">
+                      <h5 class="testimonial-author">Alberto & Erika</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item-a swiper-slide">
+              <div class="testimonials-box">
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <div class="testimonial-img">
+                      <img src="{% static 'img/testimonial-2.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <div class="testimonial-ico">
+                      <i class="bi bi-chat-quote-fill"></i>
+                    </div>
+                    <div class="testimonials-content">
+                      <p class="testimonial-text">
+                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                        rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
+                        semper.
+                      </p>
+                    </div>
+                    <div class="testimonial-author-box">
+                      <img src="{% static 'img/mini-testimonial-2.jpg' %}" alt="" class="testimonial-avatar">
+                      <h5 class="testimonial-author">Pablo & Emma</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="testimonial-carousel-pagination carousel-pagination"></div>
+      </div>
+    </section>
+
+    <section class="section-news section-t8">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Últimas Novedades</h2>
+              </div>
+              <div class="title-link">
+                <a href="{% url 'Novedades' %}">Ver Todas
+                  <span class="bi bi-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card-box-b card-shadow news-box">
+              <div class="img-box-b">
+                <img src="{% static 'img/post-1.jpg' %}" alt="" class="img-b img-fluid">
+              </div>
+              <div class="card-overlay">
+                <div class="card-header-b">
+                  <div class="card-category-b">
+                    <a href="{% url 'Novedades'%}" class="category-b">Casa</a>
+                  </div>
+                  <div class="card-title-b">
+                    <h2 class="title-2">
+                      <a href="{% url 'Novedades'%}">Nueva Casa en Camino
+                        <br> Disponible Desde:</a>
+                    </h2>
+                  </div>
+                  <div class="card-date">
+                    <span class="date-b">18 Sep. 2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-b card-shadow news-box">
+              <div class="img-box-b">
+                <img src="{% static 'img/post-2.jpg' %}" alt="" class="img-b img-fluid">
+              </div>
+              <div class="card-overlay">
+                <div class="card-header-b">
+                  <div class="card-category-b">
+                    <a href="{% url 'Novedades'%}" class="category-b">Departamento</a>
+                  </div>
+                  <div class="card-title-b">
+                    <h2 class="title-2">
+                      <a href="{% url 'Novedades'%}">Nuevo Departamento En Renta
+                        <br> Disponible Desde:</a>
+                    </h2>
+                  </div>
+                  <div class="card-date">
+                    <span class="date-b">28 Sep. 2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-b card-shadow news-box">
+              <div class="img-box-b">
+                <img src="{% static 'img/post-3.jpg' %}" alt="" class="img-b img-fluid">
+              </div>
+              <div class="card-overlay">
+                <div class="card-header-b">
+                  <div class="card-category-b">
+                    <a href="{% url 'Novedades'%}" class="category-b">Promociones</a>
+                  </div>
+                  <div class="card-title-b">
+                    <h2 class="title-2">
+                      <a href="{% url 'Novedades'%}">Nuevas Promociones Proximamente
+                        <br> Próximo</a>
+                    </h2>
+                  </div>
+                  <div class="card-date">
+                    <span class="date-b">18 Oct. 2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-contact section-t8">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="info">
+                  <div class="title">
+                    <h2 class="title-left">Contáctanos</h2>
+                  </div>
+                  <ul class="list-ico">
+                    <li><span class="bi bi-geo-alt"></span> Av. Manabí, Calle 02108</li>
+                    <li><span class="bi bi-phone"></span> +593 356 945234</li>
+                    <li><span class="bi bi-envelope"></span> correo@example.com</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control form-control-lg form-control-a"
+                          placeholder="Nombre" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <input type="email" name="email" class="form-control form-control-lg form-control-a"
+                          placeholder="Correo" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <input type="text" name="subject" class="form-control form-control-lg form-control-a"
+                          placeholder="Asunto" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <textarea name="message" class="form-control" cols="45" rows="8" placeholder="Mensaje"
+                          required></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                      <button type="submit" class="btn btn-a">Enviar Mensaje</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+{% endblock%}

@@ -1,0 +1,267 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block content %}
+<head>
+  <main id="main">
+    <section class="intro-single">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="title-single-box">
+              <h1 class="title-single">Casa Dos Plantas</h1>
+              <span class="color-text-a">Av. Reales tamarindos, Calle 606543</span>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="{% url 'home' %}">Inicio</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="{% url 'Propiedades'%}">Propiedades</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Casa 1134
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="property-single nav-arrow-b">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div id="property-single-carousel" class="swiper">
+              <div class="swiper-wrapper">
+                <div class="carousel-item-b swiper-slide">
+                  <img src="{%static 'img/slide-1.jpg'%}" alt="">
+                </div>
+                <div class="carousel-item-b swiper-slide">
+                  <img src="{%static 'img/slide-2.jpg'%}" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="property-single-carousel-pagination carousel-pagination"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+
+            <div class="row justify-content-between">
+              <div class="col-md-5 col-lg-4">
+                <div class="property-price d-flex justify-content-center foo">
+                  <div class="card-header-c d-flex">
+                    <div class="card-box-ico">
+                      <span class="bi bi-cash">$</span>
+                    </div>
+                    <div class="card-title-c align-self-center">
+                      <h5 class="title-c">55.000</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="property-summary">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="title-box-d section-t4">
+                        <h3 class="title-d">Descripción rápida</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="summary-list">
+                    <ul class="list">
+                      <li class="d-flex justify-content-between">
+                        <strong>ID de propiedad:</strong>
+                        <span>1134</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Ubicación:</strong>
+                        <span>Av. Reales tamarindos</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Tipo de Propiedad:</strong>
+                        <span>Casa 2 Plantas</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Estado:</strong>
+                        <span>En Venta</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Área:</strong>
+                        <span>440m
+                          <sup>2</sup>
+                        </span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Habitaciones:</strong>
+                        <span>4</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Baños:</strong>
+                        <span>2</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Garage:</strong>
+                        <span>1</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-7 section-md-t3">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="title-box-d">
+                      <h3 class="title-d" style="padding:45px 0px 5px;">Descripción</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="property-Descripción">
+                  <p class="Descripción color-text-a">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+                    neque, auctor sit amet
+                    aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta.
+                    Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt
+                    nibh pulvinar quam id dui posuere blandit.
+                  </p>
+                  <p class="Descripción color-text-a no-margin">
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget
+                    malesuada. Quisque velit nisi,
+                    pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada.
+                  </p>
+                </div>
+                <div class="row section-t3">
+                  <div class="col-sm-12">
+                    <div class="title-box-d">
+                      <h3 class="title-d">Cuenta Con:</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="amenities-list color-text-a">
+                  <ul class="list-a no-margin">
+                    <li>Balcon</li>
+                    <li>Cocina</li>
+                    <li>Cable Tv</li>
+                    <li>Patio Cubierto</li>
+                    <li>Internet</li>
+                    <li>Terraza</li>
+                    <li>Estacionamiento para invitados</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 offset-md-1">
+            <ul class="nav nav-pills-a nav-pills mb-3 section-t3" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-video-tab" data-bs-toggle="pill" href="#pills-video" role="tab" aria-controls="pills-video" aria-selected="true">Video Demostrativo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-plans-tab" data-bs-toggle="pill" href="#pills-plans" role="tab" aria-controls="pills-plans" aria-selected="false">Planos de la Casa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-map-tab" data-bs-toggle="pill" href="#pills-map" role="tab" aria-controls="pills-map" aria-selected="false">Ubicación</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
+                <iframe src="https://www.youtube.com/embed/QrYrte1XPas?si=W4sBWl-UglWoxkmZ" width="100%" height="460" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              </div>
+              <div class="tab-pane fade" id="pills-plans" role="tabpanel" aria-labelledby="pills-plans-tab">
+                <img src="{%static 'img/plan2.jpg'%}" class="img-fluid">
+              </div>
+              <div class="tab-pane fade" id="pills-map" role="tabpanel" aria-labelledby="pills-map-tab">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d592.9917478264341!2d-80.46823178188794!3d-1.0430848008504938!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902bed752c280501%3A0xd3db3185737d2b24!2sAlivel%20Travel!5e0!3m2!1ses!2sus!4v1722201807383!5m2!1ses!2sus" width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row section-t3">
+              <div class="col-sm-12">
+                <div class="title-box-d">
+                  <h3 class="title-d">Contacto Asesor Encargado</h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <img src="{%static 'img/agent-4.jpg'%}" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="property-agent">
+                  <h4 class="title-agent">María López</h4>
+                  <p class="color-text-a">
+                    Experta en ventas con enfoque en relaciones duraderas.
+                  </p>
+                  <ul class="list-unstyled">
+                    <li class="d-flex justify-content-between">
+                      <strong>Teléfono:</strong>
+                      <span class="color-text-a">(09) 4568932</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Whatsapp:</strong>
+                      <span class="color-text-a">+593 287 378 737</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Correo Electronico:</strong>
+                      <span class="color-text-a">agents@example.com</span>
+                    </li>
+                  </ul>
+                  <div class="socials-a">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-4">
+                <div class="property-contact">
+                  <form class="form-a">
+                    <div class="row">
+                      <div class="col-md-12 mb-1">
+                        <div class="form-group">
+                          <input type="text" class="form-control form-control-lg form-control-a" id="inputName" placeholder="Nombre *" required>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-1">
+                        <div class="form-group">
+                          <input type="email" class="form-control form-control-lg form-control-a" id="inputEmail1" placeholder="Correo Electronico *" required>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-1">
+                        <div class="form-group">
+                          <textarea id="textMessage" class="form-control" placeholder="Mensaje *" name="message" cols="45" rows="8" required></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mt-3">
+                        <button type="submit" class="btn btn-a">Envíar Mensaje</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+{% endblock%}

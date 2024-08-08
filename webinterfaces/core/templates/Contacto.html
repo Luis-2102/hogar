@@ -1,0 +1,158 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block link5 %}active{% endblock link5 %}
+{% block content %}
+<body>
+  <main id="main">
+    <section class="intro-single">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="title-single-box">
+              <h1 class="title-single">Contáctanos</h1>
+              <span class="color-text-a">Aut voluptas consequatur unde sed omnis ex placeat quis eos. Aut natus officia corrupti qui autem fugit consectetur quo. Et ipsum eveniet laboriosam voluptas beatae possimus qui ducimus. Et voluptatem deleniti. Voluptatum voluptatibus amet. Et esse sed omnis inventore hic culpa.</span>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="{%url 'home'%}">Inicio</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Contacto
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-map box">
+              <div id="map" class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3258.9692613459665!2d-80.45601058182638!3d-1.0464208740631071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902bf2aaa191509f%3A0xea77daf8eff9574!2sUNIVERSIDAD%20T%C3%89CNICA%20DE%20MANAB%C3%8D!5e0!3m2!1ses!2sus!4v1722189259848!5m2!1ses!2sus" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 section-t8">
+            <div class="title-single-box">
+              <h1 class="title-single">Contáctanos</h1>
+              <span></span>
+            </div>
+            <div class="row">
+              <div class="col-md-7">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control form-control-lg form-control-a" placeholder="Nombre" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Correo Electronico" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <input type="text" name="subject" class="form-control form-control-lg form-control-a" placeholder="Asunto" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea name="message" class="form-control" name="message" cols="45" rows="8" placeholder="Mensaje" required></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12 my-3">
+                      <div class="mb-3">
+                        <div class="loading">Cargando...</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Tu mensaje a sido enviado. Gracias!</div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 text-center">
+                      <button type="submit" class="btn btn-a">Enviar Mensaje</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-5 section-md-t3">
+                <div class="icon-box section-b2">
+                  <div class="icon-box-icon">
+                    <span class="bi bi-envelope"></span>
+                  </div>
+                  <div class="icon-box-content table-cell">
+                    <div class="icon-box-title">
+                      <h4 class="icon-title">Saludanos!!</h4>
+                    </div>
+                    <div class="icon-box-content">
+                      <p class="mb-1">Correo Electronico.
+                        <span class="color-a">contact@example.com</span>
+                      </p>
+                      <p class="mb-1">Telefono.
+                        <span class="color-a">+593 356 945234</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box section-b2">
+                  <div class="icon-box-icon">
+                    <span class="bi bi-geo-alt"></span>
+                  </div>
+                  <div class="icon-box-content table-cell">
+                    <div class="icon-box-title">
+                      <h4 class="icon-title">Encuentranos</h4>
+                    </div>
+                    <div class="icon-box-content">
+                      <p class="mb-1">
+                        Av. Manabi, calle 10036,
+                        <br> Ecuador
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="icon-box">
+                  <div class="icon-box-icon">
+                    <span class="bi bi-share"></span>
+                  </div>
+                  <div class="icon-box-content table-cell">
+                    <div class="icon-box-title">
+                      <h4 class="icon-title">Nuestras redes sociales</h4>
+                    </div>
+                    <div class="icon-box-content">
+                      <div class="socials-footer">
+                        <ul class="list-inline">
+                          <li class="list-inline-item">
+                            <a href="#" class="link-one">
+                              <i class="bi bi-facebook" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a href="#" class="link-one">
+                              <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                          <li class="list-inline-item">
+                            <a href="#" class="link-one">
+                              <i class="bi bi-instagram" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+{% endblock%}

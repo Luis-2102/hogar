@@ -1,0 +1,282 @@
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Constructora</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Archivos Vendor CSS  -->
+    <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Archivos Template Main CSS  -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault"
+            aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a class="navbar-brand text-brand" href="{%url 'home'%}">Hogar<span class="color-b">Sueños</span></a>
+
+        <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="{% block link1 %}{% endblock  %} nav-link " href="{%url 'home'%}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="{% block link2 %}{% endblock  %} nav-link" href="{% url 'Nosotros' %}">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="{% block link3 %}{% endblock  %} nav-link" href="{% url 'Propiedades' %}">Propiedades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="{% block link4 %}{% endblock  %} nav-link" href="{% url 'Novedades' %}">Novedades</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="{% block link6 %}{% endblock  %} nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Más</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{% url 'Asesores' %}">Nuestros Asesores</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="{% block link5 %}{% endblock  %} nav-link" href="{% url 'Contacto' %}">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+        <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01">
+            <i class="bi bi-search"></i>
+        </button>
+
+    </div>
+</nav>
+  <div class="click-closed"></div>
+  <div class="box-collapse">
+    <div class="title-box-d">
+      <h3 class="title-d">Buscar</h3>
+    </div>
+    <span class="close-box-collapse right-boxed bi bi-x"></span>
+    <div class="box-collapse-wrap form">
+      <form class="form-a">
+        <div class="row">
+          <div class="col-md-12 mb-2">
+            <div class="form-group">
+              <label class="pb-2" for="Type">Palabra Clave</label>
+              <input type="text" class="form-control form-control-lg form-control-a" placeholder="Palabra Clave">
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="Type">Tipo</label>
+              <select class="form-control form-select form-control-a" id="Tipo">
+                <option>Todos</option>
+                <option>Renta</option>
+                <option>En Venta</option>
+                <option>Casas</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="city">Ciudad</label>
+              <select class="form-control form-select form-control-a" id="city">
+                <option>Todas las ciudades</option>
+                <option>Portoviejo</option>
+                <option>Crucita</option>
+                <option>Quito</option>
+                <option>Junin</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="bedrooms">Habitaciones</label>
+              <select class="form-control form-select form-control-a" id="bedrooms">
+                <option>Cualquiera</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="garages">Garage</label>
+              <select class="form-control form-select form-control-a" id="garages">
+                <option>Ninguno</option>
+                <option>01</option>
+                <option>02</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="bathrooms">Baños</label>
+              <select class="form-control form-select form-control-a" id="bathrooms">
+                <option>Cualquiera</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="price">Precio</label>
+              <select class="form-control form-select form-control-a" id="price">
+                <option>Sin limite</option>
+                <option>$50,000</option>
+                <option>$100,000</option>
+                <option>$150,000</option>
+                <option>$200,000</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-b">Buscar Propiedades</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<main id="main">
+    {% block content %}{% endblock content %}
+</main>
+  <section class="section-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Hogar Sueños</h3>
+            </div>
+            <div class="w-body-a">
+              <p class="w-text-a color-text-a">
+                Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis
+                sed aute irure.
+              </p>
+            </div>
+            <div class="w-footer-a">
+              <ul class="list-unstyled">
+                <li class="color-a">
+                  <span class="color-text-a">Telefonos .</span> +593 356 945234
+                </li>
+                <li class="color-a">
+                  <span class="color-text-a">Correo .</span> contact@example.com 
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 section-md-t3">
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <div class="widget-a">
+                <div class="w-header-a">
+                  <h3 class="w-title-a text-brand">Nuestra Compañia</h3>
+                </div>
+                <div class="w-body-a">
+                  <div class="w-body-a">
+                    <ul class="list-unstyled">
+                      <li class="item-list-a">
+                        <i class="bi bi-chevron-right"></i> <a href="#">Nuestra ubicacion</a>
+                      </li>
+                      <li class="item-list-a">
+                        <i class="bi bi-chevron-right"></i> <a href="#">Legal</a>
+                      </li>
+                      <li class="item-list-a">
+                        <i class="bi bi-chevron-right"></i> <a href="#">Supervisores</a>
+                      </li>
+                      <li class="item-list-a">
+                        <i class="bi bi-chevron-right"></i> <a href="#">Afiliaciones</a>
+                      </li>
+                      <li class="item-list-a">
+                        <i class="bi bi-chevron-right"></i> <a href="#">Politica de Privacidad</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="nav-footer">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="{% url 'home' %}">Inicio</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="{% url 'Nosotros' %}">Nosotros</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="{% url 'Propiedades' %}">Propiedades</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="{% url 'Contacto' %}">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="socials-a">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="bi bi-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright-footer">
+            <p class="copyright color-text-a">
+              &copy; Copyright
+              <span class="color-a">Hogar Sueños</span> Todos los derechos reservados
+            </p>
+          </div>
+          <div class="credits">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Archivos Vendor JS  -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
